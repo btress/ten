@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">interview feedback</h2>
+    this type of form may be an easy way to consolidate/standardize feedback on interview candidates.
+    <br><br>
+    <label for="urlname">candidate name</label>
+    <input type="url" value="" id="urlname" name="urltext" maxlength="255" />
+    <label for="urlname">position applied for</label>
+    <input type="url" value="" id="urlname" name="urltext" maxlength="255" />
+    <br><br>
+    <table>
+        <tr>
+            <td>
+                <label for="education">Education Level:</label>
+            </td>
+            <td>
+                <label for="candidate">Candidate is a good fit for the position:</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:left; vertical-align: top;">
+                <select id="education" name="education" required>
+                    <option value="" disabled selected>Select your education level</option>
+                    <option value="highschool">High School</option>
+                    <option value="bachelors">Bachelors Degree</option>
+                    <option value="masters">Masters Degree</option>
+                    <option value="doctoral">Doctoral Degree</option>
+                    <option value="certification">Professional Certification</option>
+                </select>
+            </td>
+            <td>
+                <input type="radio" name="candidate"> Afree
+                <br>
+                <input type="radio" name="candidate"> Somewhat Agree
+                <br>
+                <input type="radio" name="candidate"> Neutral
+                <br>
+                <input type="radio" name="candidate"> Somewhat Disagree
+                <br>
+                <input type="radio" name="candidate"> Disagree
+            </td>
+        </tr>
+    </table>
+    <label for="s">Should we hire this candidate?</label>
+    <input type="radio" name="s"> yes
+    <input type="radio" name="s"> no
+    <br><br>
+    <label for="comments">comments</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+    <br><br>
+    <form style="text-align: center;" method="get" action="">
+        <input type="submit" value="submit"/>
+     </form>
+     
+</body>
+</html>
