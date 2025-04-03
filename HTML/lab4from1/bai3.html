@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .page {
+        width: 600px;
+        background-color: rgb(177, 177, 177);
+        padding: 10px;
+    }
+
+    .header {
+        background-color: #b1ffb1;
+        padding: 10px;
+    }
+
+    .footer {
+        background-color: #6fff6f;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        background-color: #ff8a8a;
+        padding: 10px;
+    }
+
+    .entries {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .entry {
+        background-color: #87CEFA;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sidebar {
+        flex: 1;
+        background-color: #87CEFA;
+        padding: 20px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    table,
+    th,
+    td {
+        border: 15px solid #ff8a8a;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <div class="page">
+        PAGE
+        <div class="header">HEADER</div>
+        <div class="">
+            <Table>
+                <tr>
+                    <td colspan="2" style="background-color: #ff8a8a;">CONTENT</td>
+                </tr>
+                <tr>
+                    <td style="width: 350px;
+                    height: 100px;
+                    background-color: #87CEFA;
+                    text-align: left;
+                    vertical-align: top;">ENTRY</td>
+                    <td rowspan="3" style="background-color: #87CEFA;
+                    width: 240px;
+                    text-align: left;
+                    vertical-align: top;">SIDEBAR</td>
+                </tr>
+                <tr>
+                    <td style="width: 350px;
+                    height: 100px;
+                    background-color: #87CEFA;
+                    text-align: left;
+                    vertical-align: top;">ENTRY</td>
+                </tr>
+                <tr>
+                    <td style="width: 350px;
+                    height: 100px;
+                    background-color: #87CEFA;
+                    text-align: left;
+                    vertical-align: top;">ENTRY</td>
+                </tr>
+            </Table>
+
+        </div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>
